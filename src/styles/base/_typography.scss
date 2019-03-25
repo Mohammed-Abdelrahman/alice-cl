@@ -1,0 +1,119 @@
+html {
+  font-family: $primary-font;
+  font-weight: normal;
+
+  font-size: $base-font-size;
+  line-height: $computed-line-height;
+
+  //------------Headers------------
+  h1,.h1 {
+    font-size: $h1-s;
+    line-height: computed-line-height($h1-s);
+    letter-spacing: $letter-spacing-h1;
+  }
+
+  h2,.h2 {
+    font-size: $h2-s;
+    line-height: computed-line-height($h2-s);
+    letter-spacing: $letter-spacing-h2;
+  }
+
+  h3,.h3 {
+    font-size: $h3-s;
+    line-height: computed-line-height($h3-s);
+    letter-spacing: $letter-spacing-h3;
+  }
+
+  h4,.h4 {
+    font-size: $h4-s;
+    line-height: computed-line-height($h4-s);
+    letter-spacing: $letter-spacing-h4;
+  }
+
+  h5,.h5 {
+    font-size: $h5-s;
+    line-height: computed-line-height($h5-s);
+    letter-spacing: $letter-spacing-h5;
+  }
+
+  h6,.h6 {
+    font-size: $h6-s;
+    line-height: computed-line-height($h6-s);
+    letter-spacing: $letter-spacing-h6;
+  }
+
+  h1,.h1,h2,.h2 {
+    @include light-weight-font;
+  }
+
+  h3,.h3,h4,.h4,h5,.h5 {
+    @include normal-weight-font;
+  }
+
+  h6,.h6,.subtitle-2 {
+    @include medium-weight-font;
+  }
+
+  h1,.h1,h2,.h2,h3,.h3{
+    @include font-margin-mixin($base-line-height);
+  }
+
+  h4,.h4,h5,.h5,h6,.h6{
+    @include font-margin-mixin($base-line-height/1.5);
+  }
+
+  h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5{
+    color: $light-gray;
+  }
+
+  h6,.h6{
+    color: $dark-gray;
+  }
+
+  //------------titles------------
+  .subtitle-1 {
+    letter-spacing: $letter-spacing-subtitle-1;
+  }
+  .subtitle-2 {
+    letter-spacing: $letter-spacing-subtitle-2;
+  }
+
+  .caption {
+    font-size: $base-font-size - 4;
+    letter-spacing: $letter-spacing-caption;
+  }
+
+  .overline {
+    font-size: $base-font-size - 6;
+    letter-spacing: $letter-spacing-overline;
+  }
+
+  //------------body------------
+  body, .body-1 {
+    letter-spacing: $letter-spacing-body-1;
+  }
+
+  //------------button------------
+  .button, button {
+    letter-spacing: $letter-spacing-button;
+  }
+
+  //------------overlay styles------------
+
+  .subtitle-1,.subtitle-2,body,.body-1,.body-2,.button,button,.caption,.overline {
+    line-height: $base-line-height;
+  }
+
+  body, .body-1, .subtitle-1 {
+    font-size: $base-font-size;
+  }
+
+  .body-2, .subtitle-2, .button, button {
+    font-size: $base-font-size - 2;
+  }
+
+  .overline, .button, button {
+    text-transform: uppercase;
+  }
+
+}

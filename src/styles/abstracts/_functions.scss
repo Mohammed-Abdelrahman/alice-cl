@@ -1,0 +1,7 @@
+@function computed-line-height($font-size) {
+  @return $font-size + round(($font-size * $base-line-height-scale)/100);
+}
+
+@function compute-scale($base-font-size, $scale) {
+  @return floor($base-font-size * $scale);
+}

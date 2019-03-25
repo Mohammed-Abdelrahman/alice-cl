@@ -1,0 +1,56 @@
+@import 'functions';
+
+$primary-font: 'Open Sans';
+
+$base-font-size: 16px !default;
+$base-line-height-scale: 42;
+$base-line-height: 24px;
+
+$computed-line-height: computed-line-height($base-font-size) !default;
+
+$primary-font: 'Open Sans';
+
+$h1-scale: 6;
+$h2-scale: 3.75;
+$h3-scale: 3;
+$h4-scale: 2.125;
+$h5-scale: 1.5;
+$h6-scale: 1.25;
+
+$h1-s: compute-scale($base-font-size, $h1-scale) !default;
+$h2-s: compute-scale($base-font-size, $h2-scale) !default;
+$h3-s: compute-scale($base-font-size, $h3-scale) !default;
+$h4-s: compute-scale($base-font-size, $h4-scale) !default;
+$h5-s: compute-scale($base-font-size, $h5-scale) !default;
+$h6-s: compute-scale($base-font-size, $h6-scale) !default;
+
+$weight-font-light: 200;
+$weight-font-medium: 600;
+$weight-font-normal: normal;
+
+$letter-spacing-h1:-1.5px !default;
+$letter-spacing-h2:-0.5px !default;
+$letter-spacing-h3: 0px !default;
+$letter-spacing-h4: 0.25px !default;
+$letter-spacing-h5: 0px !default;
+$letter-spacing-h6: 0.15px !default;
+$letter-spacing-subtitle-1: 0.15px !default;
+$letter-spacing-subtitle-2: 0.1px !default;
+$letter-spacing-body-1: 0.5px !default;
+$letter-spacing-body-2: 0.25px !default;
+$letter-spacing-button: 1.25px !default;
+$letter-spacing-caption: 0.4px !default;
+$letter-spacing-overline: 1.5px !default;
+
+$base-background-color: #fafafa;
+$black: rgba(#000000, .87);
+$gray: #9E9E9E;
+$light-gray: rgba(#000000, .38);
+$dark-gray: rgba(#000000, .60);
+
+$demo-1:#00000041;
+
+$columns: 12;
+$gutter: 24px;
+
+

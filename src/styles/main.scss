@@ -1,0 +1,30 @@
+/**
+  _variables: all the main variables will be loged in this file to help with consistency.
+  _functions: tracking all computed values in functions.
+  _mixins: tracking all computed maxin actions
+  _placeholders:  placeholders to help optimize the generated css
+*/
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+/**
+  reset: removing any browser styles from components
+  typography: all typography styles will go hear
+*/
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/grid';
+
+/**
+I'm thinking about addind a light and dark theme.
+*/
+@import 'themes/light';
+// @import 'themes/dark';
+
+/**
+all hacks and shameful code will go here
+*/
+@import 'misc';

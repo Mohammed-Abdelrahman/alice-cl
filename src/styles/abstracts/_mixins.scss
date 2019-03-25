@@ -1,0 +1,24 @@
+@mixin font-margin-mixin($computed-line-height) {
+  margin-top: $computed-line-height;
+  margin-bottom: $computed-line-height / 2;
+}
+
+@mixin light-weight-font {
+  font-weight: $weight-font-light;
+}
+
+@mixin normal-weight-font {
+  font-weight: $weight-font-normal;
+}
+
+@mixin medium-weight-font {
+  font-weight: $weight-font-medium;
+}
+
+@mixin alice-grid__cell--span {
+  @for $i from 1 through $columns {
+    .alice-grid__cell--span-#{$i} {
+
+    }
+  }
+}
